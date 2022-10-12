@@ -51,7 +51,7 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
-          username: ${{ secrets.PC_USERNAME }}
+          username: ${{ secrets.PC_USER }}
           key: ${{ secrets.PC_SSH_KEY }}
           passphrase: ${{ secrets.PC_PASSPHRASE }}
           script: |
