@@ -53,6 +53,7 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.PC_USERNAME }}
           key: ${{ secrets.PC_SSH_KEY }}
+          passphrase: ${{ secrets.PC_PASSPHRASE }}
           script: |
             sudo docker pull ghoulnec/infra_actions
             sudo docker stop $(sudo docker ps -a -q)
